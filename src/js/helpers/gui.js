@@ -18,7 +18,7 @@ setTimeout(() => {
   const debugMode = parsed.debug === 'true'
 
   if (debugMode || devMode) {
-    init()
+    // init()
   }
 })
 

@@ -51,27 +51,27 @@ const reflectionFbo = regl.framebufferCube(1024)
  */
 const textures = [
   {
-    texture: Texture(regl, 'logo.png'),
+    texture: Texture(regl, 'test1.png'),
     typeId: ContentTypes.RAINBOW,
     maskId: CubeMasks.M1,
   },
   {
-    texture: Texture(regl, 'logo.png'),
+    texture: Texture(regl, 'test1.png'),
     typeId: ContentTypes.BLUE,
     maskId: CubeMasks.M2,
   },
   {
-    texture: Texture(regl, 'logo.png'),
+    texture: Texture(regl, 'test1.png'),
     typeId: ContentTypes.RED,
     maskId: CubeMasks.M3,
   },
   {
-    texture: Texture(regl, 'text-1.png'),
+    texture: Texture(regl, 'textonline.png'),
     typeId: ContentTypes.BLUE,
     maskId: CubeMasks.M4,
   },
   {
-    texture: Texture(regl, 'text-2.png'),
+    texture: Texture(regl, 'launch2020.png'),
     typeId: ContentTypes.RED,
     maskId: CubeMasks.M5,
   },
@@ -153,7 +153,7 @@ const animate = ({viewportWidth, viewportHeight, tick}) => {
     reflectionFbo,
     cameraConfig,
     rotationMatrix,
-    texture: contentFbo
+    texture: contentFbo,
   })
 
   camera(cameraConfig, () => {

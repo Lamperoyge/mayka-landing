@@ -11,7 +11,6 @@ const init = () => {
 
   stats.showPanel(0)
 
-  document.body.appendChild(stats.dom)
 }
 
 devMode && init()
